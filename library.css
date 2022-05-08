@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+body {
+    padding:0;
+    margin: 0;
+    background-color: #2F303A;
+    font-family: Poppins, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    min-height: 100vh;
+    position: inherit;
+    
+}
+.full-height-grow{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #2E3852;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color:#fff;
+    padding-bottom:.5rem;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 30px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6) ;
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+}
+
+form .user-details .input-box{
+    margin-bottom:15px;
+    width: calc(100%/2-20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    outline:none;
+    background: none;
+    border: 1px solid #6b707c;
+    font-size: 1em;
+    padding: .5em;
+    color: rgb(118, 106, 160);
+    border-radius: 5px;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #596da0;
+}
+
+form .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1.5rem;
+    height: 40px;
+    margin: 40px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6) ;
+}
+
+form .button input:hover{
+    background:linear-gradient(-135deg,#71b7e6,#9b59b6) ;
+}
+
+@media(max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom:15px;
+        width: 100%;
+    }
+}

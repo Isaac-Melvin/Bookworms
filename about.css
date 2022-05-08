@@ -1,0 +1,109 @@
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+
+.brand-logo {
+    display:flex;
+    align-items: center;
+    font-size: 1em;
+    color: inherit;
+    text-decoration: none;
+    margin-top: .5em;
+    margin-left: .5em;
+}
+.brand-logo-name {
+    margin-left: 1rem;
+}
+
+
+body {
+    padding:0;
+    margin: 0;
+    background-color: #2F303A;
+    font-family: Poppins, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    min-height: 100vh;
+}
+
+.about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .main img{
+    width: 480px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+
+.all-text{
+    width:500px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.main{
+    width: 1190px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all-text h4{
+    font-size: 20px;
+    color:#858585;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.all-text h1{
+    font-size: 40px;
+    color: #7c7c7c;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.all-text p{
+    font-size: 18px;
+    color: #c5c5c5;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.btn{
+    color:white;
+    background-color: rgb(122, 111, 111);
+    padding: .50rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+   
+}
+
+.btn:hover{
+    background-color: #555353;
+    transition: .3s;
+}
+
+@media screen and (max-width:1250px){
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+    }
+}
